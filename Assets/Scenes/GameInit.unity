@@ -134,7 +134,7 @@ GameObject:
   - component: {fileID: 12391445}
   - component: {fileID: 12391444}
   m_Layer: 0
-  m_Name: SceneManager
+  m_Name: Init Manager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -152,7 +152,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 33c1ef6129575e54a94dc14ea9b0b237, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneName: City View
+  gameSceneInit: 0000000002000000
 --- !u!4 &12391445
 Transform:
   m_ObjectHideFlags: 0

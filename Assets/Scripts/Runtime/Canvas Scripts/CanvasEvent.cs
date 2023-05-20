@@ -9,8 +9,11 @@ public class CanvasEvent : MonoBehaviour
     [SerializeField] private Button creditButton;
     [SerializeField]private Button settingButton;
 
+
     public void Start()
     {
+        GetComponent<Canvas>().worldCamera = GameObject.FindWithTag("UICamera").GetComponent<Camera>();
+
         playButton.onClick.AddListener(() => { 
             PlayGame(); 
         });
@@ -28,6 +31,7 @@ public class CanvasEvent : MonoBehaviour
     {
         Debug.Log("Play Game Scene");
         FindObjectOfType<ViewManager>().GetComponent<ViewManager>().LoadScene(GameScenes.cityViewD1);
+        FindObjectOfType<ViewManager>().GetComponent<ViewManager>().LoadScene(GameScenes.resourceUI);
         FindObjectOfType<ViewManager>().GetComponent<ViewManager>().UnloadScene(GameScenes.menu);
     }
 

@@ -36,10 +36,12 @@ public class ViewManager : MonoBehaviour
 public enum GameScenes
 {
     menu,
+    pause,
     cityViewD1,
     cityViewD2,
     cityMapD1,
     cityMapD2,
     resourceUI,
-    cityBuildingUI,
+    buildingUID1,
+    buildingUID2,
 }

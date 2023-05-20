@@ -18,25 +18,28 @@ public class ViewManager : MonoBehaviour
     {
         foreach (var gameScenes in gameSceneInit)
         {
-            SceneManager.LoadScene(gameScenes.ToString(), LoadSceneMode.Additive);
+            SceneManager.LoadSceneAsync(gameScenes.ToString(), LoadSceneMode.Additive);
         }
     }
 
     public void LoadScene(GameScenes sceneName)
     {
-        SceneManager.LoadScene(sceneName.ToString(), LoadSceneMode.Additive);
+        SceneManager.LoadSceneAsync(sceneName.ToString(), LoadSceneMode.Additive);
     }
 
     public void UnloadScene(GameScenes sceneName)
     {
-        SceneManager.LoadScene(sceneName.ToString(), LoadSceneMode.Additive);
+        SceneManager.UnloadSceneAsync(sceneName.ToString());
     }
 }
 
 public enum GameScenes
 {
     menu,
-    cityView,
+    cityViewD1,
+    cityViewD2,
+    cityMapD1,
+    cityMapD2,
     resourceUI,
     cityBuildingUI,
 }

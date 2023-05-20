@@ -27,6 +27,8 @@ public class CanvasEvent : MonoBehaviour
     public void PlayGame()
     {
         Debug.Log("Play Game Scene");
+        FindObjectOfType<ViewManager>().GetComponent<ViewManager>().LoadScene(GameScenes.cityViewD1);
+        FindObjectOfType<ViewManager>().GetComponent<ViewManager>().UnloadScene(GameScenes.menu);
     }
 
     public void ShowCredits()

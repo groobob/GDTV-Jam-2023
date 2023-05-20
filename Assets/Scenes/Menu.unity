@@ -158,7 +158,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: -482.37726, y: 170.5635}
+  m_AnchoredPosition: {x: 0.000030517578, y: -96}
   m_SizeDelta: {x: 523.4298, y: 96.0858}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &83713940
@@ -244,7 +244,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: -55.826294, w: 0}
+  m_margin: {x: 0, y: 0, z: -0.9172363, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -427,10 +427,10 @@ RectTransform:
   m_Father: {fileID: 1622011563}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0}
-  m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 0, y: 94}
-  m_SizeDelta: {x: 523.4298, y: 96.085815}
+  m_AnchorMin: {x: 0.24700001, y: 0.06533334}
+  m_AnchorMax: {x: 0.76100004, y: 0.19844444}
+  m_AnchoredPosition: {x: -2, y: -1}
+  m_SizeDelta: {x: 5.4298096, y: 0.08581543}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!95 &286933793
 Animator:
@@ -535,7 +535,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: -55.826294, w: 0}
+  m_margin: {x: 0, y: 0, z: 1.7167969, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -811,15 +811,15 @@ MonoBehaviour:
   button1: {fileID: 1201380374}
   button2: {fileID: 1563709792}
   currentTime: 3
---- !u!4 &1008035049
-Transform:
+--- !u!224 &1008035049
+RectTransform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1008035047}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -54.14685, y: 10.936493, z: -1.8424475}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -830,6 +830,11 @@ Transform:
   m_Father: {fileID: 1622011563}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1125028757
 GameObject:
   m_ObjectHideFlags: 0
@@ -1279,10 +1284,10 @@ RectTransform:
   m_Father: {fileID: 1622011563}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 575, y: -302}
-  m_SizeDelta: {x: 1150, y: 604}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1425076908
 MonoBehaviour:
@@ -1869,8 +1874,8 @@ Canvas:
   m_GameObject: {fileID: 1622011559}
   m_Enabled: 1
   serializedVersion: 3
-  m_RenderMode: 0
-  m_Camera: {fileID: 0}
+  m_RenderMode: 1
+  m_Camera: {fileID: 968504275}
   m_PlaneDistance: 100
   m_PixelPerfect: 0
   m_ReceivesEvents: 1
@@ -1965,7 +1970,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2067640636}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 1.8424475}
+  m_LocalPosition: {x: 0, y: 0, z: 1.8424072}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1973,10 +1978,10 @@ RectTransform:
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: -482.37726, y: 269.06473}
-  m_SizeDelta: {x: 661.0482, y: 235.0025}
-  m_Pivot: {x: 0, y: 1}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 96.086}
+  m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &2067640638
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2060,7 +2065,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: -55.826294, w: 0}
+  m_margin: {x: 0, y: 0, z: 0.14208984, w: -1.6639099}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0

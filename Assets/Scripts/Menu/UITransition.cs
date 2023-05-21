@@ -7,21 +7,23 @@ public class UITransition : MonoBehaviour
 {
     
     private TMP_Text text;
-    public void fadeInText()
+    public void fadeInText(GameObject textObject, float duration)
     {
-        text = GetComponent<TMP_Text>();
+        text = textObject.GetComponent<TMP_Text>();
+        Debug.Log(text);
         var color = text.color;
         var fadeoutcolor = color;
         fadeoutcolor.a = 0;
-        LeanTween.value(gameObject, updateValueExampleCallback, fadeoutcolor, color, 1f);
+        LeanTween.value(gameObject, updateValueExampleCallback, fadeoutcolor, color, duration);
     }
-    public void fadeOutText()
+    public void fadeOutText(GameObject textObject, float duration)
     {
-        text = GetComponent<TMP_Text>();
+        text = textObject.GetComponent<TMP_Text>();
+        Debug.Log(text);
         var color = text.color;
         var fadeoutcolor = color;
         fadeoutcolor.a = 0;
-        LeanTween.value(gameObject, updateValueExampleCallback, color, fadeoutcolor, 1f);
+        LeanTween.value(gameObject, updateValueExampleCallback, color, fadeoutcolor, duration);
     }
     void updateValueExampleCallback(Color val)
     {

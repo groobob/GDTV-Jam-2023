@@ -24,4 +24,14 @@ public struct BuildingsData
     public string buildingName;
     public int buildingCost;
     public Sprite buildingGraphics;
+    public BuildingType buildingType;
+}
+
+public enum BuildingType
+{
+    house,
+    farm,
+    sword,
+    bow,
+    shield
 }

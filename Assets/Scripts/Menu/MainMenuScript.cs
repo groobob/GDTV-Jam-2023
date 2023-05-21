@@ -8,10 +8,11 @@ public class MainMenuScript : MonoBehaviour
     private bool gameStarted = false;
     public GameObject button1;
     public GameObject button2;
+    public GameObject pressAnyKey;
     [SerializeField] float currentTime;
     public void PlayButton()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        FindObjectOfType<ViewManager>().GetComponent<ViewManager>().LoadScene(GameScenes.cityMapD1);
     }
     void Update()
     {
@@ -23,6 +24,7 @@ public class MainMenuScript : MonoBehaviour
                 gameStarted = true;
                 button1.SetActive(true);
                 button2.SetActive(true);
+                pressAnyKey.SetActive(false);
             }
         }
     }

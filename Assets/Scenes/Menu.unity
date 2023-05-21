@@ -726,7 +726,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   button1: {fileID: 1201380374}
   button2: {fileID: 1563709792}
-  currentTime: 3
 --- !u!224 &1008035049
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1225,8 +1224,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: -1843434392, guid: 794bd92a39c5b9c4dae057d064703b17, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4

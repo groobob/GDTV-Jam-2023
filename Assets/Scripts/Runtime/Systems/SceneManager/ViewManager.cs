@@ -24,6 +24,7 @@ public class ViewManager : MonoBehaviour
 
     public void LoadScene(GameScenes sceneName)
     {
+        if (SceneManager.GetSceneByName(sceneName.ToString()).isLoaded) return;
         SceneManager.LoadSceneAsync(sceneName.ToString(), LoadSceneMode.Additive);
     }
 

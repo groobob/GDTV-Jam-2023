@@ -12,6 +12,8 @@ public class MainMenuScript : MonoBehaviour
     public void PlayButton()
     {
         FindObjectOfType<ViewManager>().GetComponent<ViewManager>().LoadScene(GameScenes.cityViewD1);
+        FindObjectOfType<ViewManager>().GetComponent<ViewManager>().LoadScene(GameScenes.resourceUI);
+        FindObjectOfType<ViewManager>().GetComponent<ViewManager>().UnloadScene(GameScenes.menu);
     }
     void Update()
     {

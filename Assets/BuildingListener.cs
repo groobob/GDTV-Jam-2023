@@ -2,12 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class InitGame : MonoBehaviour
+public class BuildingListener : MonoBehaviour
 {
     // Start is called before the first frame update
     void Start()
     {
-        AudioManager.PlayVoiceActor("My King");
+        
     }
 
     // Update is called once per frame

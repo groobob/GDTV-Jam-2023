@@ -5,6 +5,12 @@ using UnityEngine.UI;
 
 public class CityMapClickEvents : MonoBehaviour
 {
+    public static event OnBuildingBoughtEvent OnBuildingBought;
+    public static event OnBuildingPlotChangeEvent OnPlotChange;
+
+    public delegate void OnBuildingBoughtEvent(int gold);
+    public delegate void OnBuildingPlotChangeEvent(Sprite plot, BuildingType type);
+
     public Button mapButton;
     public List<Button> plotButtons = new List<Button>();
     public bool isDemension1;
@@ -18,11 +24,18 @@ public class CityMapClickEvents : MonoBehaviour
         BuildingButtonEvent.OnBuildingPurchaseAttempt += BuildingButtonEvent_OnBuildingPurchaseAttempt;
     }
 
+    private void OnDisable()
+    {
+        BuildingButtonEvent.OnBuildingPurchaseAttempt -= BuildingButtonEvent_OnBuildingPurchaseAttempt;
+    }
+
     private void BuildingButtonEvent_OnBuildingPurchaseAttempt(BuildingsData buildingData)
     {
         Debug.Log($"{buildingData.buildingName} was purchased on landPlot {currentPlot.name} for {buildingData.buildingCost}");
-        currentPlot.transform.GetChild(0).GetComponent<Image>().sprite = buildingData.buildingGraphics;
         currentPlot.GetComponent<Button>().interactable = false;
+
+        OnPlotChange?.Invoke(buildingData.buildingGraphics, buildingData.buildingType);
+        OnBuildingBought?.Invoke(buildingData.buildingCost);
     }
 
     private void Start()

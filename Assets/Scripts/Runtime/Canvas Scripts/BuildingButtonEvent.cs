@@ -1,13 +1,11 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using System;
 
 public class BuildingButtonEvent : MonoBehaviour
 {
     public static event OnBuildingPurchaseEvent OnBuildingPurchaseAttempt;
     public delegate void OnBuildingPurchaseEvent(BuildingsData buildingData);
-    public int gold;
 
     public void PurchaseBuildingAttempt(string buildingName)
     {
@@ -15,7 +13,7 @@ public class BuildingButtonEvent : MonoBehaviour
         if(BuildingDataSettings.Data.TryGetValue(buildingName, out BuildingsData data))
         {
             Debug.Log("Found Building Data");
-            if(gold >= data.buildingCost)
+            if(ResourceManager.Resources.gold >= data.buildingCost)
             {
                 Debug.Log("Attempting Purchase");
                 OnBuildingPurchaseAttempt?.Invoke(data);

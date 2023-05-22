@@ -16,7 +16,7 @@ public class MainMenuScript : MonoBehaviour
     [SerializeField] float currentTime;
     public void PlayButton()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        FindObjectOfType<ViewManager>().GetComponent<ViewManager>().UnloadScene(GameScenes.menu);
         FindObjectOfType<ViewManager>().GetComponent<ViewManager>().LoadScene(GameScenes.cityMapD1);
     }
     void Start()

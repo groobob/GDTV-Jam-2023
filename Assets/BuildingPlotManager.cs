@@ -34,6 +34,7 @@ public class BuildingPlotManager : MonoBehaviour
 
     private void CityMapClickEvents_OnPlotChange(Sprite plot, BuildingType type)
     {
+        if (plotImage.transform.parent.gameObject != FindObjectOfType<CityMapClickEvents>().GetComponent<CityMapClickEvents>().CurrentPlot) return;
         plotSprite = plot;
         buildingType = type;
 

@@ -11,9 +11,9 @@ public class ResourceListener : MonoBehaviour
 
     private void Awake()
     {
-        goldText.text = $"Gold: {ResourceManager.Resources.gold}";
-        populationText.text = $"Population: {ResourceManager.Resources.population}";
-        healthText.text = $"Health: {ResourceManager.Resources.health}";
+        goldText.text = $"{ResourceManager.Resources.gold}";
+        populationText.text = $"{ResourceManager.Resources.population}";
+        healthText.text = $"{ResourceManager.Resources.health}";
     }
 
     private void OnEnable()
@@ -32,16 +32,16 @@ public class ResourceListener : MonoBehaviour
 
     private void ResourceManager_OnHealthChange()
     {
-        healthText.text = $"Health: {ResourceManager.Resources.health}";
+        healthText.text = $"{ResourceManager.Resources.health}";
     }
 
     private void ResourceManager_OnPopulationChange()
     {
-        populationText.text = $"Population: {ResourceManager.Resources.population}";
+        populationText.text = $"{ResourceManager.Resources.population}";
     }
 
     private void ResourceManager_OnGoldChange()
     {
-        goldText.text = $"Gold: {ResourceManager.Resources.gold}";
+        goldText.text = $"{ResourceManager.Resources.gold}";
     }
 }

@@ -19,6 +19,8 @@ public class CityMapClickEvents : MonoBehaviour
     [Header("Plot Selection")]
     [SerializeField] private GameObject currentPlot;
 
+    public GameObject CurrentPlot { get => currentPlot; }
+
     private void OnEnable()
     {
         BuildingButtonEvent.OnBuildingPurchaseAttempt += BuildingButtonEvent_OnBuildingPurchaseAttempt;

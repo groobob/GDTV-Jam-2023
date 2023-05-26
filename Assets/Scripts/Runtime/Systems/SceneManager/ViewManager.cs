@@ -45,4 +45,6 @@ public enum GameScenes
     resourceUI,
     buildingUID1,
     buildingUID2,
+    GameplayManager,
+    MiniMapUI,
 }

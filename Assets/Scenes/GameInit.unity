@@ -746,12 +746,15 @@ MonoBehaviour:
   musicSource: {fileID: 1402046257}
   sfxSource: {fileID: 1402046256}
   voiceSource: {fileID: 1402046260}
-  mainTheme: {fileID: 8300000, guid: 5d7cbba0693bdea449d2c244d45bad93, type: 3}
+  mainTheme: {fileID: 8300000, guid: daf1196c446513a45b8981362048225c, type: 3}
   voiceActingScripts:
   - title: My King
     sfx: {fileID: 8300000, guid: 96f44deda4db29345bceb264a07f19c0, type: 3}
   - title: Training
     sfx: {fileID: 8300000, guid: b1919cf9fcbf26d42b5a074a58ab7b23, type: 3}
+  musicThemecripts:
+  - title: intro
+    sfx: {fileID: 8300000, guid: a4ade17d36a7cea48a5674cc126d2d07, type: 3}
 --- !u!82 &1402046260
 AudioSource:
   m_ObjectHideFlags: 0

@@ -9,7 +9,7 @@ public class CanvasSetup : MonoBehaviour
     private void Awake()
     {
         canvas = gameObject.GetComponent<Canvas>();
-        if(canvas.worldCamera != null) Destroy(canvas.worldCamera.gameObject);
+        if (canvas.worldCamera != null) Destroy(canvas.worldCamera.gameObject);
         canvas.worldCamera = CamerasManager.UiCamera;
     }
 }

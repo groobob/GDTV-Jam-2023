@@ -22,11 +22,6 @@ public class BuildingPlotManager : MonoBehaviour
     public float timer;
     public float timerLength;
 
-    private void Awake()
-    {
-        plotImage = gameObject.GetComponent<Image>();
-    }
-
     private void OnEnable()
     {
         CityMapClickEvents.OnPlotChange += CityMapClickEvents_OnPlotChange;

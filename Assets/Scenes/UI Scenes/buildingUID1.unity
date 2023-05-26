@@ -971,7 +971,7 @@ Canvas:
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 0
   m_SortingLayerID: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 2
   m_TargetDisplay: 0
 --- !u!224 &510339874
 RectTransform:
@@ -1006,7 +1006,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eb5a5a31c07895646afd1baed305926b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gold: 200
 --- !u!1 &643139935
 GameObject:
   m_ObjectHideFlags: 0

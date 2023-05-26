@@ -10,8 +10,10 @@ public class Audio : MonoBehaviour
 
     [SerializeField] private AudioClip mainTheme;
     [SerializeField] private Dictionary<string, AudioClip> voiceActing = new Dictionary<string, AudioClip>();
+    [SerializeField] private Dictionary<string, AudioClip> musicTheme = new Dictionary<string, AudioClip>();
 
-    public List<VoiceActing> voiceActingScripts = new List<VoiceActing>();
+    public List<AudioFile> voiceActingScripts = new List<AudioFile>();
+    public List<AudioFile> musicThemecripts = new List<AudioFile>();
     private void Awake()
     {
         AudioManager.MusicSource = musicSource;
@@ -23,18 +25,24 @@ public class Audio : MonoBehaviour
             voiceActing.Add(item.title, item.sfx);
         }
 
+        foreach (var item in musicThemecripts)
+        {
+            musicTheme.Add(item.title, item.sfx);
+        }
+
         AudioManager.VoiceActing = voiceActing;
+        AudioManager.MusicTheme = musicTheme;
     }
 
     // Start is called before the first frame update
     void Start()
     {
-        AudioManager.PlayMusic(mainTheme);
+        AudioManager.PlayMusic("intro");
     }
 }
 
 [System.Serializable]
-public struct VoiceActing
+public struct AudioFile
 {
     public string title;
     public AudioClip sfx;

@@ -29,6 +29,12 @@ public class ResourceManager : MonoBehaviour
         CityMapClickEvents.OnBuildingBought += CityMapClickEvents_OnBuildingBought;
         BuildingPlotManager.OnHouseEffect += BuildingPlotManager_OnHouseEffect;
         BuildingPlotManager.OnFarmEffect += BuildingPlotManager_OnFarmEffect;
+        MoveToCastle.OnCastleReached += MoveToCastle_OnCastleReached;
+    }
+
+    private void MoveToCastle_OnCastleReached(int damage)
+    {
+        AdjustHealth(damage);
     }
 
     private void BuildingPlotManager_OnFarmEffect()

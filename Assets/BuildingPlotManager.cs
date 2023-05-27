@@ -35,6 +35,9 @@ public class BuildingPlotManager : MonoBehaviour
 
         plotImage.sprite = plotSprite;
         hasEffect = true;
+
+        GameObject.Find("CanvasActivator1").transform.GetChild(0).gameObject.SetActive(true);
+        GameObject.Find("CanvasActivator2").transform.GetChild(0).gameObject.SetActive(true);
     }
 
 

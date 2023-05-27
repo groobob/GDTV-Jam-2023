@@ -4,12 +4,11 @@ using UnityEngine;
 
 public class AssignCanvas : MonoBehaviour
 {
-    public GameObject canvas;
+    public GameObject canvas; //Made private to make it easier to assign when passing through github
     public TargetCanvas targetCanvas;
 
-    private void Awake()
+    private void Start()
     {
-        canvas = gameObject.GetComponent<GameObject>();
 
         switch (targetCanvas)
         {

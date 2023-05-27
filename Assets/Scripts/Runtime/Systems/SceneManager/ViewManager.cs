@@ -30,6 +30,7 @@ public class ViewManager : MonoBehaviour
 
     public void UnloadScene(GameScenes sceneName)
     {
+        if (!(SceneManager.GetSceneByName(sceneName.ToString()).isLoaded)) return;
         SceneManager.UnloadSceneAsync(sceneName.ToString());
     }
 }

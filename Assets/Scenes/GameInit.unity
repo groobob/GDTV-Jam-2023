@@ -763,6 +763,11 @@ MonoBehaviour:
     sfx: {fileID: 8300000, guid: 77065a563ae8b5244b995e1380309046, type: 3}
   - title: Battle
     sfx: {fileID: 8300000, guid: a4ade17d36a7cea48a5674cc126d2d07, type: 3}
+  soundSFXScripts:
+  - title: WoodBuild
+    sfx: {fileID: 8300000, guid: cf74a35bfdf94644fb727f2f756d18cc, type: 3}
+  - title: MetalBuild
+    sfx: {fileID: 8300000, guid: 92e3ea863f2ab5a42b052b42e74c92df, type: 3}
 --- !u!82 &1402046260
 AudioSource:
   m_ObjectHideFlags: 0

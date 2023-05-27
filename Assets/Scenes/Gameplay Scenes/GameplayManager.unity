@@ -133,6 +133,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1775365021}
   - component: {fileID: 1775365020}
+  - component: {fileID: 1775365022}
   m_Layer: 0
   m_Name: GameplayManager
   m_TagString: Untagged
@@ -157,10 +158,6 @@ MonoBehaviour:
   - CityViewD2
   - CityMapD1
   - CityMapD2
-  cityView1Canvas: {fileID: 0}
-  cityView2Canvas: {fileID: 0}
-  cityMap1Canvas: {fileID: 0}
-  cityMap2Canvas: {fileID: 0}
 --- !u!4 &1775365021
 Transform:
   m_ObjectHideFlags: 0
@@ -176,3 +173,15 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1775365022
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1775365019}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8aa46eac69a4ccb4c879962a0c2a4db5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

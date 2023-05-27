@@ -12,6 +12,7 @@ public class MainMenuScript : MonoBehaviour
     {
         FindObjectOfType<ViewManager>().GetComponent<ViewManager>().LoadScene(GameScenes.GameplayManager);
         FindObjectOfType<ViewManager>().GetComponent<ViewManager>().LoadScene(GameScenes.resourceUI);
+        FindObjectOfType<ViewManager>().GetComponent<ViewManager>().LoadScene(GameScenes.MiniMapUI);
         FindObjectOfType<ViewManager>().GetComponent<ViewManager>().UnloadScene(GameScenes.menu);
     }
     void Update()

@@ -34,7 +34,7 @@ public class ResourceManager : MonoBehaviour
 
     private void MoveToCastle_OnCastleReached(int damage)
     {
-        AdjustHealth(damage);
+        AdjustHealth(-damage);
     }
 
     private void BuildingPlotManager_OnFarmEffect()

@@ -15,6 +15,7 @@ public class Audio : MonoBehaviour
 
     public List<AudioFile> voiceActingScripts = new List<AudioFile>();
     public List<AudioFile> musicThemecripts = new List<AudioFile>();
+    public List<AudioFile> soundSFXScripts = new List<AudioFile>();
 
     private bool audioStop = false;
 
@@ -81,6 +82,22 @@ public class Audio : MonoBehaviour
     {
         musicSource.Pause();
         musicSource2.UnPause();
+    }
+
+    public void playWoodBuild()
+    {
+        sfxSource.clip = soundSFXScripts[0].sfx;
+        sfxSource.volume = .3f;
+
+        sfxSource.Play();
+    }
+
+    public void playMetalBuild()
+    {
+        sfxSource.clip = soundSFXScripts[1].sfx;
+        sfxSource.volume = .25f;
+
+        sfxSource.Play();
     }
 
 

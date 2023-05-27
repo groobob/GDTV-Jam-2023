@@ -10,24 +10,36 @@ public class SwitchSceneView : MonoBehaviour
     const string UPDATECITYMAP1 = "CanvasMap1";
     const string UPDATECITYMAP2 = "CanvasMap2";
 
+    private GameObject AudioObject;
+    private Audio Aud;
+
+    void Start()
+    {
+        AudioObject = GameObject.Find("AudioManager");
+        Aud = AudioObject.GetComponent<Audio>();
+    }
     // Update is called once per frame
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.Alpha1) || Input.GetKeyDown(KeyCode.Keypad1))
         {
             updateCanvas(UPDATECITYVIEW1);
+            Aud.playCityAudio();
         }
         if (Input.GetKeyDown(KeyCode.Alpha2) || Input.GetKeyDown(KeyCode.Keypad2))
         {
             updateCanvas(UPDATECITYVIEW2);
+            Aud.playCityAudio();
         }
         if (Input.GetKeyDown(KeyCode.Alpha3) || Input.GetKeyDown(KeyCode.Keypad3))
         {
             updateCanvas(UPDATECITYMAP1);
+            Aud.playBattleAudio();
         }
         if (Input.GetKeyDown(KeyCode.Alpha4) || Input.GetKeyDown(KeyCode.Keypad4))
         {
             updateCanvas(UPDATECITYMAP2);
+            Aud.playBattleAudio();
         }
     }
 

@@ -5,6 +5,7 @@ using UnityEngine;
 public class Audio : MonoBehaviour
 {
     [SerializeField] private AudioSource musicSource;
+    [SerializeField] private AudioSource musicSource2;
     [SerializeField] private AudioSource sfxSource;
     [SerializeField] private AudioSource voiceSource;
 
@@ -14,6 +15,9 @@ public class Audio : MonoBehaviour
 
     public List<AudioFile> voiceActingScripts = new List<AudioFile>();
     public List<AudioFile> musicThemecripts = new List<AudioFile>();
+
+    private bool audioStop = false;
+
     private void Awake()
     {
         AudioManager.MusicSource = musicSource;
@@ -39,6 +43,47 @@ public class Audio : MonoBehaviour
     {
         AudioManager.PlayMusic("intro");
     }
+
+    void Update()
+    {
+        if(!musicSource.isPlaying && audioStop == false)
+        {
+            AudioManager.PlayMusic("repeatingintro");
+            musicSource.loop = true;
+            musicSource.volume = .2f;
+        }
+    }
+
+    public void placeClips()
+    {
+        musicSource.clip = musicThemecripts[2].sfx;
+        musicSource2.clip = musicThemecripts[3].sfx;
+
+        musicSource.loop = true;
+        musicSource.volume = .3f;
+
+        musicSource2.loop = true;
+        musicSource2.volume = .025f;
+
+        audioStop = true;
+
+        musicSource.Play();
+        musicSource2.Play();
+
+    }
+    public void playCityAudio()
+    {
+        musicSource2.Pause();
+        musicSource.UnPause();
+    }
+
+    public void playBattleAudio()
+    {
+        musicSource.Pause();
+        musicSource2.UnPause();
+    }
+
+
 }
 
 [System.Serializable]

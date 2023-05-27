@@ -22,7 +22,7 @@ public class MoveToCastle : MonoBehaviour
     {
         if(Vector2.Distance(MyTransform.position, castle.position) > 1f)
         {
-            transform.position = Vector2.MoveTowards(MyTransform.position, castle.position, .5f * Time.deltaTime);
+            transform.position = Vector2.MoveTowards(MyTransform.position, castle.position, .1f * Time.deltaTime);
         }
         else
         {

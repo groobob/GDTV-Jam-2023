@@ -8,6 +8,7 @@ public class MainMenuScript : MonoBehaviour
     private bool gameStarted = false;
     public GameObject button1;
     public GameObject button2;
+    public GameObject button3;
     public GameObject pressAnyKey;
     private Vector2 presskeyInitialPos = new Vector2(0, -450);
     private Vector2 presskeySecondPos = new Vector2(0, -250);
@@ -43,6 +44,7 @@ public class MainMenuScript : MonoBehaviour
                 gameStarted = true;
                 button1.SetActive(true);
                 button2.SetActive(true);
+                button3.SetActive(true);
                 StartCoroutine(fadeOutPressKey());
             }
         }

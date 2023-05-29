@@ -36,6 +36,18 @@ public class BuildingButtonEvent : MonoBehaviour
                 if(buildingName == "farm" || buildingName == "house") Aud.playWoodBuild();
                 else Aud.playMetalBuild();   
 
+                if (buildingName == "sword")
+                {
+                    GameObject.Find("GameplayManager").GetComponent<ArmyBuildingScript>().OnWarriorPurchase();
+                }
+                else if (buildingName == "bow")
+                {
+                    GameObject.Find("GameplayManager").GetComponent<ArmyBuildingScript>().OnBowPurchase();
+                }
+                else if (buildingName == "shield")
+                {
+                   GameObject.Find("GameplayManager").GetComponent<ArmyBuildingScript>().OnDefenderPurchase();
+                }
 
                 OnBuildingPurchaseAttempt?.Invoke(data);
             }

@@ -49,4 +49,5 @@ public enum GameScenes
     GameplayManager,
     MiniMapUI,
     ArmyUIScene1,
+    GameOver,
 }

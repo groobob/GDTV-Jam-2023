@@ -9,5 +9,6 @@ public class EnemyClciked : MonoBehaviour
     public void AttemptTargetEnemy(GameObject enemy)
     {
         FindObjectOfType<ViewManager>().GetComponent<ViewManager>().LoadScene(GameScenes.ArmyUIScene1);
+        GameObject.Find("GameplayManager").GetComponent<HoldArmyObject>().enemyArmyClicked = enemy;
     }
 }

@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: -1532605851195017873}
   - component: {fileID: 6064243357415592941}
   - component: {fileID: 642180766961491522}
+  - component: {fileID: 4113150179059745775}
   m_Layer: 5
   m_Name: Enemy
   m_TagString: Untagged
@@ -91,7 +92,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 11d9c5d50d943304f97f8a0f8d32f67a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 2
+  damage: 5
   castle: {fileID: 0}
   MyTransform: {fileID: 0}
 --- !u!114 &6064243357415592941
@@ -162,3 +163,28 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 514865f143b9b894fabe0f515290285e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &4113150179059745775
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8274281006657235649}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4703ebe5768760544bc34a4fbd9e8608, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  warriorAmount: 0
+  rangerAmount: 0
+  defenderAmount: 0
+  timer1: 0
+  timer2: 0
+  timer3: 0
+  timerWarriorDeath: 1
+  timer2RangerDeath: 1
+  timer3DefenderDeath: 1
+  timerWarriorDeathAlly: 1
+  timer2RangerDeathAlly: 1
+  timer3DefenderDeathAlly: 1
+  isfighting: 0

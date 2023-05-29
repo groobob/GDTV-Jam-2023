@@ -39,12 +39,13 @@ public class ResourceManager : MonoBehaviour
 
     private void BuildingPlotManager_OnFarmEffect()
     {
-        AdjustGold(2);
+        AdjustGold(5);
     }
 
     private void BuildingPlotManager_OnHouseEffect()
     {
-        AdjustPopulation(10);
+        AdjustPopulation(5);
+        AdjustGold(-1);
     }
 
     private void OnDisable()
@@ -76,8 +77,30 @@ public class ResourceManager : MonoBehaviour
 
         if (resources.health <= 0)
         {
-            OnEmptyHealth?.Invoke();
+            FindObjectOfType<ViewManager>().GetComponent<ViewManager>().UnloadScene(GameScenes.buildingUID1);
+            FindObjectOfType<ViewManager>().GetComponent<ViewManager>().UnloadScene(GameScenes.buildingUID2);
+            FindObjectOfType<ViewManager>().GetComponent<ViewManager>().UnloadScene(GameScenes.cityMapD1);
+            FindObjectOfType<ViewManager>().GetComponent<ViewManager>().UnloadScene(GameScenes.cityMapD2);
+            FindObjectOfType<ViewManager>().GetComponent<ViewManager>().UnloadScene(GameScenes.resourceUI);
+            FindObjectOfType<ViewManager>().GetComponent<ViewManager>().UnloadScene(GameScenes.cityViewD1);
+            FindObjectOfType<ViewManager>().GetComponent<ViewManager>().UnloadScene(GameScenes.cityViewD2);
+            FindObjectOfType<ViewManager>().GetComponent<ViewManager>().UnloadScene(GameScenes.MiniMapUI);
+            FindObjectOfType<ViewManager>().GetComponent<ViewManager>().UnloadScene(GameScenes.ArmyUIScene1);
+            FindObjectOfType<ViewManager>().GetComponent<ViewManager>().UnloadScene(GameScenes.GameplayManager);
+            FindObjectOfType<ViewManager>().GetComponent<ViewManager>().LoadScene(GameScenes.GameOver);
         }
+    }
+
+    public int GetPopulation()
+    {
+        return resources.population;
+    }
+
+    public void RestartRes()
+    {
+        resources.gold = startingGold;
+        resources.population = startingPopulation;
+        resources.health = startingHealth;
     }
 }
 

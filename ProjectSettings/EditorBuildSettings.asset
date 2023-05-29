@@ -47,4 +47,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/UI Scenes/ArmyUIScene1.unity
     guid: dd41b2b3d0dae73468c669e14476ed8e
+  - enabled: 1
+    path: Assets/Scenes/GameOver.unity
+    guid: eba05c5b3b8858c4b9f561c7ae454e46
   m_configObjects: {}

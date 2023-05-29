@@ -134,6 +134,8 @@ GameObject:
   - component: {fileID: 1775365021}
   - component: {fileID: 1775365020}
   - component: {fileID: 1775365022}
+  - component: {fileID: 1775365023}
+  - component: {fileID: 1775365024}
   m_Layer: 0
   m_Name: GameplayManager
   m_TagString: Untagged
@@ -185,3 +187,28 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8aa46eac69a4ccb4c879962a0c2a4db5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1775365023
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1775365019}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 036dc52c65b65cc4daf0d92a8ec9fb4a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1775365024
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1775365019}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 46c4ea098696a2d418235fe0456894d7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemyArmyClicked: {fileID: 0}

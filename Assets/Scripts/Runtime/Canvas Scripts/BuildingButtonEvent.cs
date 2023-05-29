@@ -25,6 +25,7 @@ public class BuildingButtonEvent : MonoBehaviour
             Debug.Log("Found Building Data " + buildingName);
             if(ResourceManager.Resources.gold >= data.buildingCost)
             {
+                
             if(this.gameObject.name == "Canvas2")
                 GameObject.Find("CityView1Canvas").SetActive(false);
             if(this.gameObject.name == "Canvas")

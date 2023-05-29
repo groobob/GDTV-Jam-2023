@@ -48,4 +48,5 @@ public enum GameScenes
     buildingUID2,
     GameplayManager,
     MiniMapUI,
+    ArmyUIScene1,
 }

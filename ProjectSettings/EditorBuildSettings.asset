@@ -44,4 +44,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Gameplay Scenes/City View/cityViewD1.unity
     guid: ca609d32d0c3fbb49a648f4b0cefd300
+  - enabled: 1
+    path: Assets/Scenes/UI Scenes/ArmyUIScene1.unity
+    guid: dd41b2b3d0dae73468c669e14476ed8e
   m_configObjects: {}

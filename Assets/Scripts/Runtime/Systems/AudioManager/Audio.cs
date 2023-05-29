@@ -51,7 +51,7 @@ public class Audio : MonoBehaviour
         {
             AudioManager.PlayMusic("repeatingintro");
             musicSource.loop = true;
-            musicSource.volume = .2f;
+            musicSource.volume = .25f;
         }
     }
 
@@ -61,10 +61,10 @@ public class Audio : MonoBehaviour
         musicSource2.clip = musicThemecripts[3].sfx;
 
         musicSource.loop = true;
-        musicSource.volume = .3f;
+        musicSource.volume = .4f;
 
         musicSource2.loop = true;
-        musicSource2.volume = .025f;
+        musicSource2.volume = .5f;
 
         audioStop = true;
 

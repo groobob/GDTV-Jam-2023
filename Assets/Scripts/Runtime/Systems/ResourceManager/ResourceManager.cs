@@ -39,12 +39,13 @@ public class ResourceManager : MonoBehaviour
 
     private void BuildingPlotManager_OnFarmEffect()
     {
-        AdjustGold(5);
+        AdjustGold(3);
+        AdjustPopulation(-1);
     }
 
     private void BuildingPlotManager_OnHouseEffect()
     {
-        AdjustPopulation(5);
+        AdjustPopulation(2);
         AdjustGold(-1);
     }
 

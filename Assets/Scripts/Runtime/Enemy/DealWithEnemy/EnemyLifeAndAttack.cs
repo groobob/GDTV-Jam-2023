@@ -141,6 +141,7 @@ public class EnemyLifeAndAttack : MonoBehaviour
         GameObject temp;
         temp = GameObject.Find("GameplayManager").GetComponent<HoldArmyObject>().enemyArmyClicked;
         temp.GetComponent<MoveToCastle>().enabled = true;
+        isfighting = false;
     }
 
     public int enemyWarriorC()

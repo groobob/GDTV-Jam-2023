@@ -31,6 +31,7 @@ public class SendTroopsToEnemy : MonoBehaviour
 
     public void submitTroops()
     {
+        GameObject.Find("InitManager").GetComponent<ResourceManager>().AdjustPopulation(-1 * (amountWarrior+amountRanger+amountDefender));
         ObjectGetter = GameObject.Find("GameplayManager").GetComponent<HoldArmyObject>().enemyArmyClicked;
         ObjectGetter.GetComponent<EnemyLifeAndAttack>().startBattle(amountWarrior, amountRanger, amountDefender);
         FindObjectOfType<ViewManager>().GetComponent<ViewManager>().UnloadScene(GameScenes.ArmyUIScene1);
